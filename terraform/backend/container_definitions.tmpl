@@ -1,0 +1,30 @@
+[
+    {
+      "name": "image-discord-bot",
+      "image": "${image}",
+      "memoryReservation": 1024,
+      "essential": true,
+      "environment": [
+        {
+          "name": "clientId",
+          "value": "${clientId}"
+        },
+        {
+          "name": "dbPath",
+          "value": "."
+        },
+        {
+          "name": "token",
+          "value": "${token}"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+            "awslogs-group": "/ecs/task-def-discord-bot",
+            "awslogs-region": "${region}",
+            "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
