@@ -1,3 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-bot-bj"
+    key    = "terraform.tfstate"
+    region = "eu-central-1"
+  }
+}
 
 module "network" {
     source = "./network"

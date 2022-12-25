@@ -14,6 +14,7 @@ Using: ECS (Fargate), CloudWatch, VPC, SG, Subnets, NAT-Gateway, Elastic IP
 
 * Root user or IAM user with [these](PERMISSIONS.md) API permissions
 * Setup AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY (e.g. aws configure)
+* Modify terraform/main.cf for a different backend
 
 ## How to
 
