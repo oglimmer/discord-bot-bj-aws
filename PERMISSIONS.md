@@ -27,3 +27,5 @@ This is not optimized.
 * AmazonECS_FullAccess
 * AmazonVPCFullAccess
 * AWSLambda_FullAccess
+* AmazonS3FullAccess (only if S3 backend is used)
+* AWSCloudShellFullAccess (only if executed from CloudShell)
