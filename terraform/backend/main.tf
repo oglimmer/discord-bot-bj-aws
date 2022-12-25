@@ -44,6 +44,8 @@ resource "aws_ecs_service" "ecs-service-discord-bot" {
   task_definition = aws_ecs_task_definition.task-def-discord-bot.arn
   desired_count   = 1
   launch_type     = "FARGATE"
+  deployment_maximum_percent = 100
+  deployment_minimum_healthy_percent = 0
 
   network_configuration {
     subnets = [var.subnet_private1_id, var.subnet_private2_id]
