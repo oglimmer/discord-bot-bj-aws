@@ -17,8 +17,3 @@ Using: ECS (Fargate), CloudWatch, VPC, SG, Subnets, NAT-Gateway, Elastic IP
 
 * Change into terraform and exec `./genesis.sh all` to set up everything
 
-## Untouched
-
-* Proper encryption at rest
-* Any audit logging
-  
