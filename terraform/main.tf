@@ -18,6 +18,7 @@ module "backend" {
     subnet_private2_id = module.network.subnet_private2_id
     clientId = var.clientId
     token = var.token
+    project_region = var.project_region
 }
 
 module "ecs_update_pipeline" {
